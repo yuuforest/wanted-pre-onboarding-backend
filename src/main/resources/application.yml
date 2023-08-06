@@ -1,0 +1,28 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: utf-8
+
+spring:
+  # 데이터베이스 설정
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wanted?serverTimezone=Asia/Seoul
+    username: root
+    password: root
+
+  # JPA 설정
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+
+# 로그 레벨 설정
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
