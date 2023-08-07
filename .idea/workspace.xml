@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa5df3dc-890a-4243-b2b5-b77cdd50f165" name="Changes" comment="[Feat] entity 생성&#10;&#10;Date, Board, Member, Token entity 생성">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/common/BaseDateEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/config/JpaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/entity/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/entity/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/entity/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/repository/BoardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/repository/TokenRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
@@ -39,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -136,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691343554253</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[Feat] entity 생성&#10;&#10;Date, Board, Member, Token entity 생성">
+      <created>1691387033534</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691387033535</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
