@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5df3dc-890a-4243-b2b5-b77cdd50f165" name="Changes" comment="[Remove] 프로젝트 초기화">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="aa5df3dc-890a-4243-b2b5-b77cdd50f165" name="Changes" comment="[Feat] entity 생성&#10;&#10;Date, Board, Member, Token entity 생성">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/common/BaseDateEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/config/JpaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/entity/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/entity/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/entity/Token.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,22 +28,19 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="onboarding" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="onboarding" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,16 +53,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Project/GIT/wanted-pre-onboarding-backend/src/main/java/com/wanted/onboarding/domain/member&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Project\GIT\wanted-pre-onboarding-backend\src\main\java\com\wanted\onboarding\domain\member" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wanted.onboarding.domain.member.entity" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.OnboardingApplication">
     <configuration name="BoardApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wanted.board.BoardApplication" />
@@ -118,12 +129,20 @@
       <option name="project" value="LOCAL" />
       <updated>1691343081138</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[Init] 프로젝트 생성">
+      <created>1691343554253</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691343554253</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[Init] 프로젝트 생성" />
     <MESSAGE value="[Remove] 프로젝트 초기화" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Remove] 프로젝트 초기화" />
+    <MESSAGE value="[Init] 프로젝트 생성" />
+    <MESSAGE value="[Feat] entity 생성&#10;&#10;Date, Board, Member, Token entity 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Feat] entity 생성&#10;&#10;Date, Board, Member, Token entity 생성" />
   </component>
 </project>
