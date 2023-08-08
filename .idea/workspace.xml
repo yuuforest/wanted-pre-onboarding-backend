@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5df3dc-890a-4243-b2b5-b77cdd50f165" name="Changes" comment="[Feat] repository 생성&#10;&#10;Board, Member, Token repository 생성">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/common/response/ListResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/common/response/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/common/response/ResultService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/common/response/SingleResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/dto/request/RegisterRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/service/MemberServiceImpl.java" afterDir="false" />
+    <list default="true" id="aa5df3dc-890a-4243-b2b5-b77cdd50f165" name="Changes" comment="[Feat] 회원가입 기본 기능 추가&#10;&#10;공통 response 포맷 생성&#10;예외 처리, 유효성 검사, 비밀번호 암호화 등의 기능 추가 필요">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/error/code/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/error/code/MemberErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/error/exception/ErrorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/error/handler/ErrorExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/error/response/ErrorResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/error/response/ErrorResultService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/common/BaseDateEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/common/entity/BaseDateEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/entity/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/entity/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/service/MemberServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -158,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691392755555</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[Feat] 회원가입 기본 기능 추가&#10;&#10;공통 response 포맷 생성&#10;예외 처리, 유효성 검사, 비밀번호 암호화 등의 기능 추가 필요">
+      <created>1691480055981</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691480055981</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -166,6 +168,7 @@
     <MESSAGE value="[Init] 프로젝트 생성" />
     <MESSAGE value="[Feat] entity 생성&#10;&#10;Date, Board, Member, Token entity 생성" />
     <MESSAGE value="[Feat] repository 생성&#10;&#10;Board, Member, Token repository 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Feat] repository 생성&#10;&#10;Board, Member, Token repository 생성" />
+    <MESSAGE value="[Feat] 회원가입 기본 기능 추가&#10;&#10;공통 response 포맷 생성&#10;예외 처리, 유효성 검사, 비밀번호 암호화 등의 기능 추가 필요" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Feat] 회원가입 기본 기능 추가&#10;&#10;공통 response 포맷 생성&#10;예외 처리, 유효성 검사, 비밀번호 암호화 등의 기능 추가 필요" />
   </component>
 </project>
