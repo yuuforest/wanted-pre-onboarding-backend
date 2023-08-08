@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5df3dc-890a-4243-b2b5-b77cdd50f165" name="Changes" comment="[Feat] 회원가입 유효성 검사 기능 추가&#10;&#10;공통 Exception 포맷 생성&#10;member 회원가입 유효성 관련 ErrorCode 추가">
+    <list default="true" id="aa5df3dc-890a-4243-b2b5-b77cdd50f165" name="Changes" comment="[Feat] 회원가입 비밀번호 암호화 기능 추가">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/dto/response/LoginResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/dto/request/RegisterRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/dto/request/MemberRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/service/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/service/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/error/code/MemberErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/error/code/MemberErrorCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691485626646</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[Feat] 회원가입 비밀번호 암호화 기능 추가">
+      <created>1691486402994</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691486402994</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,6 +184,7 @@
     <MESSAGE value="[Feat] repository 생성&#10;&#10;Board, Member, Token repository 생성" />
     <MESSAGE value="[Feat] 회원가입 기본 기능 추가&#10;&#10;공통 response 포맷 생성&#10;예외 처리, 유효성 검사, 비밀번호 암호화 등의 기능 추가 필요" />
     <MESSAGE value="[Feat] 회원가입 유효성 검사 기능 추가&#10;&#10;공통 Exception 포맷 생성&#10;member 회원가입 유효성 관련 ErrorCode 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Feat] 회원가입 유효성 검사 기능 추가&#10;&#10;공통 Exception 포맷 생성&#10;member 회원가입 유효성 관련 ErrorCode 추가" />
+    <MESSAGE value="[Feat] 회원가입 비밀번호 암호화 기능 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Feat] 회원가입 비밀번호 암호화 기능 추가" />
   </component>
 </project>
