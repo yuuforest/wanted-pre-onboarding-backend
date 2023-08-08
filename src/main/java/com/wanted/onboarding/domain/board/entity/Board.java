@@ -1,6 +1,6 @@
 package com.wanted.onboarding.domain.board.entity;
 
-import com.wanted.onboarding.common.BaseDateEntity;
+import com.wanted.onboarding.common.entity.BaseDateEntity;
 import com.wanted.onboarding.domain.member.entity.Member;
 import lombok.AccessLevel;
 import lombok.Getter;

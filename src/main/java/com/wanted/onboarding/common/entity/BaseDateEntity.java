@@ -1,4 +1,4 @@
-package com.wanted.onboarding.common;
+package com.wanted.onboarding.common.entity;
 
 import lombok.Getter;
 import lombok.Setter;

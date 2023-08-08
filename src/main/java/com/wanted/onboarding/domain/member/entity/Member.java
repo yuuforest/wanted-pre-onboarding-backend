@@ -1,6 +1,7 @@
 package com.wanted.onboarding.domain.member.entity;
 
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -20,4 +21,9 @@ public class Member {
     @Column(nullable = false)
     private String password;
 
+    @Builder
+    public Member(String id, String password) {
+        this.id = id;
+        this.password = password;
+    }
 }
