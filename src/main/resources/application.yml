@@ -27,3 +27,8 @@ logging:
   level:
     org.hibernate.SQL: debug
     org.hibernate.type: trace
+
+# JWT 설정
+jwt:
+  header: Authorization
+  secret: sk3Skmvcskm4knzAaknmvd23Zslvsd

@@ -1,5 +1,6 @@
 package com.wanted.onboarding.domain.member.service;
 
+import com.wanted.onboarding.config.jwt.JwtTokenProvider;
 import com.wanted.onboarding.domain.member.dto.request.MemberRequestDto;
 import com.wanted.onboarding.domain.member.dto.response.LoginResponseDto;
 import com.wanted.onboarding.domain.member.entity.Member;
@@ -16,6 +17,7 @@ public class MemberServiceImpl implements MemberService {
 
     private final MemberRepository memberRepository;
     private final PasswordEncoder passwordEncoder;
+    private final JwtTokenProvider jwtTokenProvider;
 
     @Override
     public void register(MemberRequestDto requestDto) {
@@ -52,9 +54,13 @@ public class MemberServiceImpl implements MemberService {
         if (!passwordEncoder.matches(password, member.getPassword()))
                     throw new ErrorException(MemberErrorCode.PASSWORD_NOT_CORRECT);
 
-        // 유효성 검사 및 사용자 인증 종료
+        // JWT 토큰 발급
+        String accessToken = jwtTokenProvider.generateAccessToken(email);
+        String refreshToken = jwtTokenProvider.generateRefreshToken(email);
 
-
-        return null;
+        return LoginResponseDto.builder()
+                .accessToken(accessToken)
+                .refreshToken(refreshToken)
+                .build();
     }
 }
