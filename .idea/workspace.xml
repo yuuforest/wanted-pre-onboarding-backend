@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5df3dc-890a-4243-b2b5-b77cdd50f165" name="Changes" comment="[Feat] 로그인 JWT 토큰 발급 기능 구현&#10;&#10;AccessToken, RefreshToken 발급&#10;로그인 후 정상적으로 토큰이 동작하는지 확인 필요&#10;로그인 시, 사용자 인증 관련 코드 리팩토링 필요">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/dto/request/BoardRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/dto/response/ListBoardResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/dto/response/SingleBoardResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/service/BoardServiceImpl.java" afterDir="false" />
+    <list default="true" id="aa5df3dc-890a-4243-b2b5-b77cdd50f165" name="Changes" comment="[Feat] Board Controller, Service, DTO 파일 생성&#10;&#10;기능 구현은 하지 않고, 환경만 세팅&#10;이후 수정 가능성 있음">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/entity/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/entity/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/service/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/member/service/MemberServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691673886921</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[Feat] Board Controller, Service, DTO 파일 생성&#10;&#10;기능 구현은 하지 않고, 환경만 세팅&#10;이후 수정 가능성 있음">
+      <created>1691763105210</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1691763105210</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +230,7 @@
     <MESSAGE value="[Feat] 로그인 JWT 토큰 발급 기능 구현&#10;&#10;AccessToken, RefreshToken 발급&#10;로그인 후 정상적으로 토큰이 동작하는지 확인 필요" />
     <MESSAGE value="[Feat] 로그인 JWT 토큰 발급 기능 구현&#10;&#10;AccessToken, RefreshToken 발급&#10;로그인 후 정상적으로 토큰이 동작하는지 확인 필요&#10;사용자 인증 관련 코드 리팩토링 필요" />
     <MESSAGE value="[Feat] 로그인 JWT 토큰 발급 기능 구현&#10;&#10;AccessToken, RefreshToken 발급&#10;로그인 후 정상적으로 토큰이 동작하는지 확인 필요&#10;로그인 시, 사용자 인증 관련 코드 리팩토링 필요" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Feat] 로그인 JWT 토큰 발급 기능 구현&#10;&#10;AccessToken, RefreshToken 발급&#10;로그인 후 정상적으로 토큰이 동작하는지 확인 필요&#10;로그인 시, 사용자 인증 관련 코드 리팩토링 필요" />
+    <MESSAGE value="[Feat] Board Controller, Service, DTO 파일 생성&#10;&#10;기능 구현은 하지 않고, 환경만 세팅&#10;이후 수정 가능성 있음" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Feat] Board Controller, Service, DTO 파일 생성&#10;&#10;기능 구현은 하지 않고, 환경만 세팅&#10;이후 수정 가능성 있음" />
   </component>
 </project>

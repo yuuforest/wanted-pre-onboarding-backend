@@ -8,6 +8,7 @@ import com.wanted.onboarding.domain.board.dto.response.SingleBoardResponseDto;
 import com.wanted.onboarding.domain.board.service.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -21,8 +22,8 @@ public class BoardController {
     private final BoardService boardService;
 
     @PostMapping("")
-    public ResponseEntity<Result> registerBoard(@RequestBody BoardRequestDto request) {
-        boardService.registerBoard(request);
+    public ResponseEntity<Result> registerBoard(@RequestBody BoardRequestDto request, Authentication authentication) {
+        boardService.registerBoard(request, authentication);
         return ResponseEntity.ok().body(resultService.getSuccessResponse());
     }
 

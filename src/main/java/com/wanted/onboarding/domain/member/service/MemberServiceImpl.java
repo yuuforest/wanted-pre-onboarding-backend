@@ -48,8 +48,7 @@ public class MemberServiceImpl implements MemberService {
         if (password.length() < 8) throw new ErrorException(MemberErrorCode.PASSWORD_SHORT_LENGTH);
 
         // 사용자 인증
-        Member member = memberRepository.findById(email)
-                .orElseThrow(() -> new ErrorException(MemberErrorCode.ID_NOT_CORRECT));
+        Member member = getMember(email);
 
         if (!passwordEncoder.matches(password, member.getPassword()))
                     throw new ErrorException(MemberErrorCode.PASSWORD_NOT_CORRECT);
@@ -62,5 +61,10 @@ public class MemberServiceImpl implements MemberService {
                 .accessToken(accessToken)
                 .refreshToken(refreshToken)
                 .build();
+    }
+
+    @Override
+    public Member getMember(String email) {
+        return memberRepository.findById(email).orElseThrow(() -> new ErrorException(MemberErrorCode.ID_NOT_CORRECT));
     }
 }

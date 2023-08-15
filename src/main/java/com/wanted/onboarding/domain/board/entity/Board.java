@@ -3,6 +3,7 @@ package com.wanted.onboarding.domain.board.entity;
 import com.wanted.onboarding.common.entity.BaseDateEntity;
 import com.wanted.onboarding.domain.member.entity.Member;
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -26,4 +27,10 @@ public class Board extends BaseDateEntity {
     @JoinColumn(name="memberSeq")
     private Member member;
 
+    @Builder
+    public Board(String title, String content, Member member) {
+        this.title = title;
+        this.content = content;
+        this.member = member;
+    }
 }
