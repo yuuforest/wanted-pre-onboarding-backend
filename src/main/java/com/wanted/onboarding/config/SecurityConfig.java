@@ -1,5 +1,6 @@
 package com.wanted.onboarding.config;
 
+import com.wanted.onboarding.config.jwt.CustomAuthenticationEntryPoint;
 import com.wanted.onboarding.config.jwt.JwtAuthenticationFilter;
 import com.wanted.onboarding.config.jwt.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +19,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig {
 
     private final JwtTokenProvider jwtTokenProvider;
+    private final CustomAuthenticationEntryPoint customAuthenticationEntryPoint;
 
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
@@ -38,6 +40,9 @@ public class SecurityConfig {
                 .antMatchers("/member/**").permitAll()
                 .antMatchers("/board/all").permitAll()
                 .anyRequest().authenticated()
+
+                .and()
+                .exceptionHandling().authenticationEntryPoint(customAuthenticationEntryPoint)
 
                 .and()
                 .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class)

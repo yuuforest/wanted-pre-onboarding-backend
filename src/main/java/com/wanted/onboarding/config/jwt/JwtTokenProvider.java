@@ -2,10 +2,7 @@ package com.wanted.onboarding.config.jwt;
 
 import com.wanted.onboarding.error.code.TokenErrorCode;
 import com.wanted.onboarding.error.exception.ErrorException;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jws;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
