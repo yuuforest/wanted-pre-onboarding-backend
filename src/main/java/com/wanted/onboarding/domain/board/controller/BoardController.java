@@ -50,9 +50,9 @@ public class BoardController {
     }
 
     @DeleteMapping("/{boardSeq}")
-    public ResponseEntity<Result> removeBoard(@PathVariable("boardSeq") long boardSeq) {
+    public ResponseEntity<Result> removeBoard(Authentication authentication, @PathVariable("boardSeq") long boardSeq) {
         // 특정 게시글 삭제
-        boardService.removeBoard(boardSeq);
+        boardService.removeBoard(authentication, boardSeq);
         return ResponseEntity.ok().body(resultService.getSuccessResponse());
     }
 

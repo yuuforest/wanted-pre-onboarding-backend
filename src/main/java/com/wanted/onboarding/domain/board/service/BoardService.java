@@ -18,7 +18,7 @@ public interface BoardService {
 
     void modifyBoard(Authentication authentication, long boardSeq, BoardRequestDto request);
 
-    void removeBoard(long boardSeq);
+    void removeBoard(Authentication authentication, long boardSeq);
 
     Board getBoard(long boardSeq);
 }

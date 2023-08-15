@@ -79,8 +79,15 @@ public class BoardServiceImpl implements BoardService {
     }
 
     @Override
-    public void removeBoard(long boardSeq) {
+    public void removeBoard(Authentication authentication, long boardSeq) {
+        Member member = memberService.getMember(authentication.getName());
+        Board board = getBoard(boardSeq);
 
+        // 작성자와 로그인 사용자가 동일해야 함
+        if(!Objects.equals(board.getMember().getId(), member.getId()))
+            throw new ErrorException(BoardErrorCode.BOARD_WRITER_DIFFERENT);
+
+        boardRepository.delete(board);
     }
 
     @Override
