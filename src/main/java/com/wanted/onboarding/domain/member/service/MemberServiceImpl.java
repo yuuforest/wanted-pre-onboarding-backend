@@ -2,10 +2,15 @@ package com.wanted.onboarding.domain.member.service;
 
 import com.wanted.onboarding.config.jwt.JwtTokenProvider;
 import com.wanted.onboarding.domain.member.dto.request.MemberRequestDto;
+import com.wanted.onboarding.domain.member.dto.request.TokenRequestDto;
 import com.wanted.onboarding.domain.member.dto.response.LoginResponseDto;
+import com.wanted.onboarding.domain.member.dto.response.TokenResponseDto;
 import com.wanted.onboarding.domain.member.entity.Member;
+import com.wanted.onboarding.domain.member.entity.Token;
 import com.wanted.onboarding.domain.member.repository.MemberRepository;
+import com.wanted.onboarding.domain.member.repository.TokenRepository;
 import com.wanted.onboarding.error.code.MemberErrorCode;
+import com.wanted.onboarding.error.code.TokenErrorCode;
 import com.wanted.onboarding.error.exception.ErrorException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -16,6 +21,7 @@ import org.springframework.stereotype.Service;
 public class MemberServiceImpl implements MemberService {
 
     private final MemberRepository memberRepository;
+    private final TokenRepository tokenRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtTokenProvider jwtTokenProvider;
 
@@ -57,9 +63,24 @@ public class MemberServiceImpl implements MemberService {
         String accessToken = jwtTokenProvider.generateAccessToken(email);
         String refreshToken = jwtTokenProvider.generateRefreshToken(email);
 
+        tokenRepository.save(Token.builder().refreshToken(refreshToken).build());
+
         return LoginResponseDto.builder()
                 .accessToken(accessToken)
                 .refreshToken(refreshToken)
+                .build();
+    }
+
+    @Override
+    public TokenResponseDto reissueToken(TokenRequestDto requestDto) {
+
+        String refreshToken = requestDto.getRefreshToken();
+
+        if(tokenRepository.findByRefreshToken(refreshToken).isEmpty() || !jwtTokenProvider.validateToken(refreshToken))
+            throw new ErrorException(TokenErrorCode.TOKEN_ERROR);
+
+        return TokenResponseDto.builder()
+                .accessToken(jwtTokenProvider.generateAccessToken(jwtTokenProvider.getUserId(refreshToken)))
                 .build();
     }
 

@@ -3,7 +3,9 @@ package com.wanted.onboarding.domain.member.controller;
 import com.wanted.onboarding.common.response.Result;
 import com.wanted.onboarding.common.response.ResultService;
 import com.wanted.onboarding.domain.member.dto.request.MemberRequestDto;
+import com.wanted.onboarding.domain.member.dto.request.TokenRequestDto;
 import com.wanted.onboarding.domain.member.dto.response.LoginResponseDto;
+import com.wanted.onboarding.domain.member.dto.response.TokenResponseDto;
 import com.wanted.onboarding.domain.member.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -28,4 +30,12 @@ public class MemberController {
         LoginResponseDto responseDto = memberService.login(requestDto);
         return ResponseEntity.ok().body(resultService.getSingleData(responseDto));
     }
+
+    @PostMapping("/login/reissue")
+    public ResponseEntity<Result> reissueToken(@RequestBody TokenRequestDto requestDto) {
+        TokenResponseDto responseDto = memberService.reissueToken(requestDto);
+        return ResponseEntity.ok().body(resultService.getSingleData(responseDto));
+    }
+
+
 }

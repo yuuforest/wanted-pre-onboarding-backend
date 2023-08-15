@@ -1,6 +1,7 @@
 package com.wanted.onboarding.domain.member.entity;
 
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -17,4 +18,9 @@ public class Token {
 
     @Column(nullable = false)
     private String refreshToken;
+
+    @Builder
+    public Token(String refreshToken) {
+        this.refreshToken = refreshToken;
+    }
 }
