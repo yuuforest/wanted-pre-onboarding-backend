@@ -12,6 +12,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -36,7 +37,9 @@ public class BoardServiceImpl implements BoardService {
 
     @Override
     public List<ListBoardResponseDto> getBoards() {
-        return null;
+        return boardRepository.findAll().stream()
+                .map(m -> new ListBoardResponseDto(m.getTitle(), m.getCreateDate()))
+                .collect(Collectors.toList());
     }
 
     @Override

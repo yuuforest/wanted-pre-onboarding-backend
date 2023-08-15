@@ -27,9 +27,10 @@ public class BoardController {
         return ResponseEntity.ok().body(resultService.getSuccessResponse());
     }
 
-    @GetMapping("")
+    @GetMapping("/all")
     public ResponseEntity<Result> getBoards() {
         // 게시글 목록 조회
+        System.out.println("여기까지 왔을까요?");
         List<ListBoardResponseDto> response = boardService.getBoards();
         return ResponseEntity.ok().body(resultService.getListData(response));
     }

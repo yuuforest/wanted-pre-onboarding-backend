@@ -36,6 +36,7 @@ public class SecurityConfig {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/member/**").permitAll()
+                .antMatchers("/board/all").permitAll()
                 .anyRequest().authenticated()
 
                 .and()
