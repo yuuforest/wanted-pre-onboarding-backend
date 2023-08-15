@@ -14,5 +14,6 @@ public class SingleBoardResponseDto {
     private String content;
     private LocalDateTime createDate;
     private LocalDateTime modifyDate;
+    private String writer;
 
 }

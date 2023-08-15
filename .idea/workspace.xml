@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa5df3dc-890a-4243-b2b5-b77cdd50f165" name="Changes" comment="[Feat] Board 게시글 전체 목록 조회 기능 구현&#10;&#10;Pagination 기능 미완료">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/error/code/BoardErrorCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/config/jwt/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/config/jwt/JwtAuthenticationFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/dto/response/ListBoardResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/dto/response/ListBoardResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/repository/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/repository/BoardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/dto/response/SingleBoardResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/dto/response/SingleBoardResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/entity/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/entity/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/service/BoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/service/BoardServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,9 +39,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -209,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692077429849</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="[Feat] Board 게시글 전체 목록 조회 기능 구현&#10;&#10;Pagination 기능 미완료">
+      <created>1692082221178</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1692082221178</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

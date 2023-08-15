@@ -22,31 +22,30 @@ public class BoardController {
     private final BoardService boardService;
 
     @PostMapping("")
-    public ResponseEntity<Result> registerBoard(@RequestBody BoardRequestDto request, Authentication authentication) {
-        boardService.registerBoard(request, authentication);
+    public ResponseEntity<Result> registerBoard(Authentication authentication, @RequestBody BoardRequestDto request) {
+        boardService.registerBoard(authentication, request);
         return ResponseEntity.ok().body(resultService.getSuccessResponse());
     }
 
     @GetMapping("/all")
     public ResponseEntity<Result> getBoards() {
         // 게시글 목록 조회
-        System.out.println("여기까지 왔을까요?");
         List<ListBoardResponseDto> response = boardService.getBoards();
         return ResponseEntity.ok().body(resultService.getListData(response));
     }
 
     @GetMapping("/{boardSeq}")
-    public ResponseEntity<Result> getBoard(@PathVariable("boardSeq") long boardSeq) {
+    public ResponseEntity<Result> getBoard(Authentication authentication, @PathVariable("boardSeq") long boardSeq) {
         // 특정 게시글 조회
-        SingleBoardResponseDto response = boardService.getBoard(boardSeq);
+        SingleBoardResponseDto response = boardService.getBoard(authentication, boardSeq);
         return ResponseEntity.ok().body(resultService.getSingleData(response));
     }
 
-    @PutMapping("/{boardSeq}")
-    public ResponseEntity<Result> modifyBoard(@PathVariable("boardSeq") long boardSeq,
+    @PatchMapping("/{boardSeq}")
+    public ResponseEntity<Result> modifyBoard(Authentication authentication, @PathVariable("boardSeq") long boardSeq,
                                               @RequestBody BoardRequestDto request) {
         // 특정 게시글 수정
-        boardService.modifyBoard(boardSeq, request);
+        boardService.modifyBoard(authentication, boardSeq, request);
         return ResponseEntity.ok().body(resultService.getSuccessResponse());
     }
 
