@@ -588,6 +588,11 @@ POST `http://localhost:8080/member/login/reissue`
 <summary>request</summary>
 <div markdown="1">
 
+Request Header
+```
+인증 필요 없음
+```
+
 Request Body
 ```
 {
