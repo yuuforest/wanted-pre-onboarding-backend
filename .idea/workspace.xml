@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa5df3dc-890a-4243-b2b5-b77cdd50f165" name="Changes" comment="[Feat] Board 전체 게시글 조회 pagination 기능 구현">
+    <list default="true" id="aa5df3dc-890a-4243-b2b5-b77cdd50f165" name="Changes" comment="[Fix] Board response 수정 완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/dto/response/ListBoardResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/dto/response/ListBoardResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/dto/response/SingleBoardResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/dto/response/SingleBoardResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/onboarding/domain/board/service/BoardServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692162270006</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="[Fix] Board response 수정 완료">
+      <created>1692172153266</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1692172153267</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,6 +289,7 @@
     <MESSAGE value="[Fix] Token 에러 코드 수정&#10;&#10;TokenErrorCode response 수정 완료" />
     <MESSAGE value="[Feat] AccessToken 재발급 기능 구현" />
     <MESSAGE value="[Feat] Board 전체 게시글 조회 pagination 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Feat] Board 전체 게시글 조회 pagination 기능 구현" />
+    <MESSAGE value="[Fix] Board response 수정 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Fix] Board response 수정 완료" />
   </component>
 </project>
