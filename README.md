@@ -204,6 +204,9 @@ POST `http://localhost:8080/member/login/reissue`
 
 <hr> 
 
+📚 [Postman으로 확인하는 Member API](https://documenter.getpostman.com/view/25121598/2s9Y5R15kd) <br>
+📚 [Postman으로 확인하는 Board API](https://documenter.getpostman.com/view/25121598/2s9Y5QzkxY#f9f98251-2698-4c17-840f-bee13aadc8d4)
+
 **과제 1. 사용자 회원가입 엔드포인트**
 
 POST `http://localhost:8080/member`
