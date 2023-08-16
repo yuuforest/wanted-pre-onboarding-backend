@@ -45,7 +45,7 @@ public class BoardServiceImpl implements BoardService {
     public List<ListBoardResponseDto> getBoards(Pageable pageable) {
         Page<Board> pageBoard = boardRepository.findAll(pageable);
         return pageBoard.stream()
-                .map(m -> new ListBoardResponseDto(m.getTitle(), m.getCreateDate()))
+                .map(m -> new ListBoardResponseDto(m.getBoardSeq(), m.getTitle(), m.getCreateDate()))
                 .collect(Collectors.toList());
     }
 
@@ -56,6 +56,7 @@ public class BoardServiceImpl implements BoardService {
         Board board = getBoard(boardSeq);
 
         return SingleBoardResponseDto.builder()
+                .boardSeq(board.getBoardSeq())
                 .title(board.getTitle())
                 .content(board.getContent())
                 .createDate(board.getCreateDate())

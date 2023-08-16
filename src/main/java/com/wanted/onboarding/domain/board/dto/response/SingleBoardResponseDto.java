@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 @Builder
 public class SingleBoardResponseDto {
 
+    private final long boardSeq;
     private String title;
     private String content;
     private LocalDateTime createDate;
