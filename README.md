@@ -154,6 +154,7 @@ Authorization : [accessToken]
 <details>
 <summary>request</summary>
 <div markdown="1">
+<br>
 
 Request Header
 ```
@@ -173,6 +174,7 @@ Request Body
 <details>
 <summary>response</summary>
 <div markdown="1">
+<br>
 
 성공
 ```
@@ -201,7 +203,7 @@ Request Body
 ```
 
 </div>
-</details> <br>
+</details>
 
 **과제 2. 사용자 로그인 엔드포인트**
 
