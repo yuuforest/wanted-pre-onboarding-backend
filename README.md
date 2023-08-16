@@ -6,7 +6,7 @@
 
 **과제 1. 사용자 회원가입 엔드포인트**
 
-[POST] http://localhost:8080/member
+[POST] `http://localhost:8080/member`
 
 - Request Body
 ```
@@ -18,7 +18,7 @@
 
 **과제 2. 사용자 로그인 엔드포인트**
 
-[POST] http://localhost:8080/member/login
+[POST] `http://localhost:8080/member/login`
 
 - Request Body
 ```
@@ -30,7 +30,7 @@
 
 **과제 3. 새로운 게시글을 생성하는 엔드포인트** 
 
-[POST] http://localhost:8080/board
+[POST] `http://localhost:8080/board`
 
 - Request Headers
 ```
@@ -47,7 +47,7 @@ Authorization : [accessToken]
 
 **과제 4. 게시글 목록을 조회하는 엔드포인트**
 
-[GET] http://localhost:8080/board/all?page={page}&size={size}
+[GET] `http://localhost:8080/board/all?page={page}&size={size}`
 
 - Request Headers
 ```
@@ -56,7 +56,7 @@ Authorization : [accessToken]
 
 **과제 5. 특정 게시글을 조회하는 엔드포인트**
 
-[GET] http://localhost:8080/board/{게시글 ID}
+[GET] `http://localhost:8080/board/{게시글 ID}`
 
 - Request Headers
 ```
@@ -65,7 +65,7 @@ Authorization : [accessToken]
 
 **과제 6. 특정 게시글을 수정하는 엔드포인트**
 
-[PATCH] http://localhost:8080/board/{게시글 ID}
+[PATCH] `http://localhost:8080/board/{게시글 ID}`
 
 - Request Headers
 ```
@@ -82,7 +82,7 @@ Authorization : [accessToken]
 
 **과제 7. 특정 게시글을 삭제하는 엔드포인트**
 
-[DELETE] http://localhost:8080/board/{게시글 ID}
+[DELETE] `http://localhost:8080/board/{게시글 ID}`
 
 - Request Headers
 ```
