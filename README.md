@@ -8,8 +8,13 @@
 
 [POST] `http://localhost:8080/member`
 
-- Request Body
 ```
++ Request Headers
+
+인증 필요 없음
+
++ Request Body
+
 {
     "email" : "yurimkang20@gmail.com",
     "password" : "12345678!!"
@@ -20,8 +25,13 @@
 
 [POST] `http://localhost:8080/member/login`
 
-- Request Body
 ```
++ Request Headers
+
+인증 필요 없음
+
++ Request Body
+
 {
     "email" : "yurimkang20@gmail.com",
     "password" : "12345678!!"
@@ -32,25 +42,27 @@
 
 [POST] `http://localhost:8080/board`
 
-- Request Headers
 ```
-Authorization : [accessToken]
-```
++ Request Headers
 
-- Request Body
-```
+Authorization : [accessToken]
+
++ Request Body
+
 {
     "title": "제목입니다",
     "content": "본문입니다."
 }
 ```
 
+
 **과제 4. 게시글 목록을 조회하는 엔드포인트**
 
 [GET] `http://localhost:8080/board/all?page={page}&size={size}`
 
-- Request Headers
 ```
++ Request Headers
+
 인증 필요 없음
 ```
 
@@ -58,8 +70,9 @@ Authorization : [accessToken]
 
 [GET] `http://localhost:8080/board/{게시글 ID}`
 
-- Request Headers
 ```
++ Request Headers
+
 Authorization : [accessToken]
 ```
 
@@ -67,24 +80,26 @@ Authorization : [accessToken]
 
 [PATCH] `http://localhost:8080/board/{게시글 ID}`
 
-- Request Headers
 ```
-Authorization : [accessToken]
-```
++ Request Headers
 
-- Request Body
-```
+Authorization : [accessToken]
+
++ Request Body
+
 {
     "title": "변경한 제목입니다. ",
     "content": "변경한 본문입니다. "
 }
 ```
 
+
 **과제 7. 특정 게시글을 삭제하는 엔드포인트**
 
 [DELETE] `http://localhost:8080/board/{게시글 ID}`
 
-- Request Headers
 ```
++ Request Headers
+
 Authorization : [accessToken]
 ```
