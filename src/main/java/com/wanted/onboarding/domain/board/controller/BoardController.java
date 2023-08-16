@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
+import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 @RestController
@@ -28,9 +29,9 @@ public class BoardController {
     }
 
     @GetMapping("/all")
-    public ResponseEntity<Result> getBoards() {
+    public ResponseEntity<Result> getBoards(Pageable pageable) {
         // 게시글 목록 조회
-        List<ListBoardResponseDto> response = boardService.getBoards();
+        List<ListBoardResponseDto> response = boardService.getBoards(pageable);
         return ResponseEntity.ok().body(resultService.getListData(response));
     }
 

@@ -10,11 +10,13 @@ import com.wanted.onboarding.domain.member.service.MemberService;
 import com.wanted.onboarding.error.code.BoardErrorCode;
 import com.wanted.onboarding.error.exception.ErrorException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import javax.transaction.Transactional;
+import org.springframework.data.domain.Pageable;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -40,8 +42,9 @@ public class BoardServiceImpl implements BoardService {
     }
 
     @Override
-    public List<ListBoardResponseDto> getBoards() {
-        return boardRepository.findAll().stream()
+    public List<ListBoardResponseDto> getBoards(Pageable pageable) {
+        Page<Board> pageBoard = boardRepository.findAll(pageable);
+        return pageBoard.stream()
                 .map(m -> new ListBoardResponseDto(m.getTitle(), m.getCreateDate()))
                 .collect(Collectors.toList());
     }
