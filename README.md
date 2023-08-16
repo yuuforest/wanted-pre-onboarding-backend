@@ -154,7 +154,6 @@ Authorization : [accessToken]
 <details>
 <summary>request</summary>
 <div markdown="1">
-<br>
 
 Request Header
 ```
@@ -174,7 +173,6 @@ Request Body
 <details>
 <summary>response</summary>
 <div markdown="1">
-<br>
 
 성공
 ```
