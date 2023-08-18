@@ -136,7 +136,7 @@ POST `http://localhost:8080/member/login/reissue`
 
 <hr> 
 
-🎥 **[구현한 API의 동작을 촬영한 데모 영상 링크](https://drive.google.com/drive/folders/1nMgrRt6uFRoli1TIQ4rMHHYmZaKLeyHY?usp=drive_link)**
+🎥 **[구현한 API의 동작을 촬영한 데모 영상 링크](https://github.com/yuuforest/wanted-pre-onboarding-backend/tree/main/docs)**
 
 <br>
 
